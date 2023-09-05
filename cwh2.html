@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<hr>    <!-- headings -->
+    <h1>Books to read</h1>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptatum.</h2>
+    <h3>Lorem ipsum dolor sit.</h3>
+    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing.</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum.</h5>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis culpa totam deleniti delectus impedit?</h6>
+    <hr>
+    <!-- paragrapgh -->
+    <p>there are alot of books to read for you</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id placeat, deserunt magnam optio temporibus omnis. Sint alias odio corrupti! Quis autem, amet quia fuga tempore a. Atque perspiciatis fugit doloribus cum ipsa. Nesciunt, amet iure.</p>
+<hr>
+    <!-- atribute link -->
+    <a href="https://www.sarkariresult.com/">click here to go to government's site</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dicta necessitatibus. Explicabo ipsa praesentium accusamus illo nemo quia quae, in recusandae error. Qui, assumenda? Quas autem reiciendis totam ad consectetur laboriosam minus. Nostrum dolores incidunt earum. Voluptatum autem enim eveniet facere, rem voluptates ipsam temporibus commodi nihil aliquid aut maiores?</p>
+<hr>
+
+    <!-- website link connect -->
+    <a href="https://learn.xrpl.org/course/code-with-the-xrpl/lesson/create-accounts-and-send-xrp/">click here to go to XRPL's site</a>
+    <!-- absulate link -->
+    <a href="/about.html">go to about</a>
+<hr>
+    <!-- image tag -->
+    <img src="https://photosfile.com/wp-content/uploads/2022/02/Mahadev-1.jpeg" alt="mahadev image" width="121px">
+<hr>
+    <!-- bold, itelic, underline -->
+    <!-- <br>            br tag is used for space -->
+
+    <br> 
+    <b>this is bold</b>
+    <br>
+    <i>this itelic</i>
+    <br>
+    <u>this is underline</u>
+
+ <!-- hr tad is used for dividation -->
+
+
+
+ <!-- subscript and superscript -->
+<hr>
+ <p>CO<sub>2</sub></p>
+ <p>H<sub>2</sub>O</p>
+ <p>K<sub>2</sub>SO<sub>4</sub></p>
+
+<hr>
+
+<p>x<sup>2</sup>+bx+c</p>
+
+<hr>
+<!-- big and small -->
+
+<big>This is big</big>
+<br>
+<small>this is small</small>
+
+<hr>
+<!-- pre tag is used for assetist code copy in our file -->
+
+<pre>
+
+    String jsonStr = "[{\r\n" + "\"name\":\"New York\",\r\n" + "\"number\": \"732921\",\r\n"+ "\"center\": {\r\n" + "\"latitude\": 38.895111,\r\n"  + " \"longitude\": -77.036667\r\n" + "}\r\n" + "},\r\n" + " {\r\n"+ "\"name\": \"San Francisco\",\r\n" +\"number\":\"298732\",\r\n"+ "\"center\": {\r\n" + "    \"latitude\": 37.783333,\r\n"+ "\"longitude\": -122.416667\r\n" + "}\r\n" + "}\r\n" + "]";
+
+ObjectMapper mapper = new ObjectMapper();
+MyPojo[] jsonObj = mapper.readValue(jsonStr, MyPojo[].class);
+
+for (MyPojo itr : jsonObj) {
+    System.out.println("Val of name is: " + itr.getName());
+    System.out.println("Val of number is: " + itr.getNumber());
+    System.out.println("Val of latitude is: " + 
+        itr.getCenter().getLatitude());
+    System.out.println("Val of longitude is: " + 
+        itr.getCenter().getLongitude() + "\n");
+}
+
+</pre>
+
+<hr>
+<p>c+o<sub>2</sub> &rarr; co<sub>2</sub></p>
+
+</body>
+</html>
